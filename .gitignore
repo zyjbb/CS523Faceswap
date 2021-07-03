@@ -1,0 +1,57 @@
+# Global (Exclude all + retain files that are unlikely to pollute local installs)
+*
+!*.keep
+!*.md
+
+# Root files
+!Dockerfile*
+!.pylintrc
+!*requirements*.txt
+!setup.cfg
+!.travis.yml
+!/faceswap.py
+!/setup.py
+!/tools.py
+!/update_deps.py
+
+# Support files
+!_travis/
+!_travis/*.py
+!.install/
+!.install/**
+!config/
+!docs/
+!docs/full**
+!docs/_static**
+!locales/
+!locales/**
+!tests/
+!tests/**/
+!tests/**/*.py
+
+# Core files
+!lib/
+!lib/**/
+!lib/**/*.py
+!lib/gui/**/icons/*.png
+!lib/gui/**/themes/default.json
+!plugins/
+!plugins/**/
+!plugins/**/*.py
+!scripts/
+!scripts/*.py
+!tools/
+!tools/**/
+!tools/**/*.py
+
+# GUI Plugin Presets
+!lib/gui/**/presets/train/model_phaze_a_dfaker_preset.json
+!lib/gui/**/presets/train/model_phaze_a_dfl-h128_preset.json
+!lib/gui/**/presets/train/model_phaze_a_dfl-sae-df_preset.json
+!lib/gui/**/presets/train/model_phaze_a_dfl-sae-liae_preset.json
+!lib/gui/**/presets/train/model_phaze_a_dfl-saehd-df_preset.json
+!lib/gui/**/presets/train/model_phaze_a_dfl-saehd-liae_preset.json
+!lib/gui/**/presets/train/model_phaze_a_iae_preset.json
+!lib/gui/**/presets/train/model_phaze_a_lightweight_preset.json
+!lib/gui/**/presets/train/model_phaze_a_original_preset.json
+!lib/gui/**/presets/train/model_phaze_a_stojo_preset.json
